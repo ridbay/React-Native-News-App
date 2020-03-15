@@ -26,6 +26,9 @@
                         <Text style={[styles.source]} onPress={()=> Actions.Source({source, title: source.name})}>
                             {source.name}
                         </Text>
+                        <Text style={[styles.date]}>
+                            {moment(publishedAt).fromNow()}
+                        </Text>
                     </View>
                 </View>
              </View>
@@ -33,3 +36,6 @@
          </TouchableHighlight>
      )
  }
+
+
+ export default NewsItem;
