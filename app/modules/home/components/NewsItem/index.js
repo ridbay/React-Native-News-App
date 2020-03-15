@@ -18,6 +18,16 @@
                 {
                     article.urlToImage && <Image source={{uri: article.urlToImage}} style={styles.img} />
                 }
+                <View style={[styles.info]}>
+                    <Text style={[styles.title]}>
+                        {title}
+                    </Text>
+                    <View style={[styles.bottom]}>
+                        <Text style={[styles.source]} onPress={()=> Actions.Source({source, title: source.name})}>
+                            {source.name}
+                        </Text>
+                    </View>
+                </View>
              </View>
 
          </TouchableHighlight>
