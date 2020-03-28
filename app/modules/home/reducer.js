@@ -4,7 +4,7 @@ import * as t from './constants';
 let initialState = {
     isFetching: true,
     articles: [],
-    errorMsg: '',
+    hasError: false,
 };
 
 const homeReducer = (state=initialState, action) => {
